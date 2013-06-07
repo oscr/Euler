@@ -1,6 +1,3 @@
 #!/usr/bin/env python
 
-multipleThree = [ x for x in range(3, 1000, 3) ]
-multipleFive = [ x for x in range(5, 1000, 5) ]
-multipleUnique = set(multipleThree + multipleFive)
-print sum(multipleUnique)
+print sum( x for x in range(1000) if x % 3 == 0 or x % 5 == 0)
