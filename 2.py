@@ -10,7 +10,7 @@ def fibonacci():
         yield i
         i, j = j, i+j
 
-print sum(filter(lambda x : (x % 2 == 0), takewhile(lambda x : x < 4000000, fibonacci())))
+print(sum(filter(lambda x : (x % 2 == 0), takewhile(lambda x : x < 4000000, fibonacci()))))
 
 # Solution 2
 def evenFibonacci():
@@ -31,7 +31,7 @@ def sumEvenFibonacci(limit):
           
         fibSum += v
          
-print sumEvenFibonacci(4000000)
+print(sumEvenFibonacci(4000000))
 
 # Solution 3
-print sum(takewhile(lambda x : x < 4000000, evenFibonacci()))
+print(sum(takewhile(lambda x : x < 4000000, evenFibonacci())))
