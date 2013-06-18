@@ -31,4 +31,4 @@ for i in range(len(value) - 4):
     if product > max:
         max = product
 
-print max
+print(max)
