@@ -28,7 +28,7 @@ def sumEvenFibonacci(limit):
     fibSum = 0
     fib = evenFibonacci()
     while True:
-        v = fib.next()
+        v = next(fib)
         if v > limit:
             return fibSum
 
