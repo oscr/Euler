@@ -2,6 +2,7 @@
 
 
 import operator
+from functools import reduce
 
 # Creates list of ints. Would be cheating to just make it one line :)
 value = [int(n) for n in """
