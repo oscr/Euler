@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 
 
-# Creates an array of ints. Would be cheating to just make it one line :)
+import operator
+
+# Creates list of ints. Would be cheating to just make it one line :)
 value = [int(n) for n in """
 73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843
@@ -26,8 +28,8 @@ value = [int(n) for n in """
 
 max = -1
 for i in range(len(value) - 4):
-    # Calculate product using 5 digits
-    product = value[i] * value[i + 1] * value[i + 2] * value[i + 3] * value[i + 4]
+    product = reduce(operator.mul, [value[i + j] for j in range(5)])
+
     if product > max:
         max = product
 
