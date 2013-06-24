@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 
-triangle = [[int(i) for i in j.split()] for j in open('triangle.txt', 'r').readlines()]
+triangle = [[int(i) for i in j.split()] for j in open('triangle.txt', 'r')]
 
 # for i in range(second last row, row 0, steping -1
 for i in range(len(triangle) - 2, -1, -1):
