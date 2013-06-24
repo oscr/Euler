@@ -15,10 +15,10 @@ def getDivisorSum(n):
 
 
 def getAmicableSumLimit10000():
-    divisorSums = {}
-    for i in range(1, 10000):
-        divisorSums[i] = getDivisorSum(i)
+    divisorSums = {i: getDivisorSum(i) for i in range(1, 10000)}
 
+    # More fun solution
+    # return sum([i for (i, j) in divisorSums.items() if i != j and divisorSums.get(j) == i])
     sum = 0
     for (i, j) in divisorSums.items():
         if i != j and divisorSums.get(j) == i:
