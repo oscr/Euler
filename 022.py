@@ -4,7 +4,7 @@
 names = [n.strip('"') for n in open('names.txt', 'r').readline().split(',')]
 
 # I trust that timsort is sufficient
-list.sort(names)
+names.sort()
 
 totalSum = 0
 startIndex = ord('A') - 1
