@@ -10,7 +10,7 @@ def findPythagoreanTripletProduct():
         for b in range(1, 1000):
             c = 1000 - a - b
             if isPythagoreanTriplet(a, b, c):
-                print("product abc: %s" % (a * b * c))
-                return
+                return (a * b * c)
 
-findPythagoreanTripletProduct()
+
+print(findPythagoreanTripletProduct())
