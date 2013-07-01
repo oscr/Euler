@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class SummationOfPrimes {
 
 	public static void main(String[] args) {
-		int limit = 2000000;
+		int limit = 2_000_000;
 		boolean[] primes = new boolean[limit];
 
 		// Initialize the array
