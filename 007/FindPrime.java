@@ -1,7 +1,7 @@
 public class FindPrime {
 
 	public static void main(String[] args) {
-		int primesLeftToFind = 10000;
+		int primesLeftToFind = 10_000;
 		int maybePrime = 1;
 		do {
 			maybePrime += 2;
