@@ -13,7 +13,7 @@ public class Fibonacci {
 			i = j;
 			j = i + k;
 
-		} while (j < 4000000);
+		} while (j < 4_000_000);
 
 		System.out.println(sum);
 	}
