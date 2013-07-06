@@ -13,10 +13,10 @@ public class SummationOfPrimes {
 
 		// Calculate the prime sum
 		long sum = 0;
-		for (long i = 2; i < limit; i++) {
-			if (primes[(int) i]) {
+		for (int i = 2; i < limit; i++) {
+			if (primes[i]) {
 				sum += i;
-				for (long j = i * i; j < primes.length; j += i) {
+				for (long j = (long)i * i; j < primes.length; j += i) {
 					primes[(int) j] = false;
 				}
 			}
