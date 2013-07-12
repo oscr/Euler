@@ -1,4 +1,3 @@
-package completed;
 public class LargestPalindrome {
 	public static void main(String[] args) {
 		int largest = Integer.MIN_VALUE;
