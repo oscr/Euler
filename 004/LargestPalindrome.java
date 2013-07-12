@@ -1,16 +1,15 @@
+package completed;
 public class LargestPalindrome {
-
 	public static void main(String[] args) {
-		int largest = -1;
+		int largest = Integer.MIN_VALUE;
 		for (int i = 100; i < 1000; i++) {
 			for (int j = 100; j < 1000; j++) {
-				int l = j * i;
-				if (l > largest && isPalindrome(l)) {
-					largest = l;
+				int k = j * i;
+				if (k > largest && isPalindrome(k)) {
+					largest = k;
 				}
 			}
 		}
-
 		System.out.println(largest);
 	}
 
@@ -20,5 +19,4 @@ public class LargestPalindrome {
 		return s1.equals(s2);
 
 	}
-
 }
