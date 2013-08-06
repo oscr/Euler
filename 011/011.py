@@ -28,9 +28,6 @@ for (dx, dy) in [(1, 0), (0, 1), (1, 1), (1, -1)]:
     for (x, row) in enumerate(grid):
         for (y, column) in enumerate(row):
 
-            if (x + dx * 3) >= len(grid) or (y + dy * 3) >= len(grid):
-                break
-
             product = 1
             for j in range(4):
                 product *= grid[x + (dx * j)][y + (dy * j)]
@@ -38,4 +35,4 @@ for (dx, dy) in [(1, 0), (0, 1), (1, 1), (1, -1)]:
             if product > max:
                 max = product
 
-print("max: %s" % max)
+print(max)
